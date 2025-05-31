@@ -1,0 +1,11 @@
+dbt_testing: #Needs to be name of dbt proj
+    target: dev
+    outputs:
+        dev:
+            type: sqlite
+            schema: main
+            database: 'database'
+            schema: 'main'
+            schemas_and_paths:
+              main: 'C:/Users/jlomb/Documents/PersonalProjects/SurveyData.db'
+            schema_directory: 'C:/Users/jlomb/Documents/PersonalProjects'

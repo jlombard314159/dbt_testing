@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS 'SurveyData' (
 CREATE INDEX 'ix_SurveyData_respondent_yearid' ON 'SurveyData' ('respondent_id', 'year_id');
 
 CREATE TABLE IF NOT EXISTS 'GeographicData' (
-    'respondent_id' INTEGER NOT NULL UNIQUE,
+   'respondent_id' INTEGER NOT NULL UNIQUE,
    'spatial_id' TEXT NOT NULL,
    'x_coord' FLOAT NOT NULL,
    'y_coord' FLOAT NOT NULL,

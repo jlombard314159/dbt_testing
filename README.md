@@ -2,6 +2,8 @@
 meow
 
 # dbt steps
+Part of this came directly from:
+https://docs.getdbt.com/guides/manual-install?step=1
 
 - Via python install dbt-core. Can do this in conda
 - install the appropriate adapter. Seems to only work via pip
@@ -14,7 +16,15 @@ meow
 
 - run `dbt debug` and debug accordingly.
 
-- 
+- Modify anything that is in `models` for a more appropriate query for your dataset
+
+- SQLITE3 prettyy output printing: `.mode table`
+
+- add in tests: create a `schema.yml` in /models
+
+- For more compllicated tests add a `.sql` in `/tests`. But you also need a `.yml` in the `tests` folder.
+
+- run `dbt test` to identify if tests succeed
 
 ## Does this work at census
 

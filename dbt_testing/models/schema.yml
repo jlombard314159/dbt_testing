@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: height_data
+    columns:
+      - name: max_value
+        tests:
+          - not_null
+      - name: measurement
+        tests:
+          - accepted_values:
+              values: ['height']
+     

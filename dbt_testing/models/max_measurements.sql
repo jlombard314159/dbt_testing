@@ -1,5 +1,3 @@
-{{ config(materialized='view') }}
-
 with max_record as (
 
     select respondent_id,

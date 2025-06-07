@@ -22,10 +22,20 @@ https://docs.getdbt.com/guides/manual-install?step=1
 
 - add in tests: create a `schema.yml` in /models
 
-- For more compllicated tests add a `.sql` in `/tests`. But you also need a `.yml` in the `tests` folder.
+- For more complicated tests add a `.sql` in `/tests`. But you also need a `.yml` in the `tests` folder.
 
 - run `dbt test` to identify if tests succeed
 
 ## Does this work at census
 
 Steps that JAL thinks he can do in docker: all the dbt stuff
+
+## Some general things
+
+DBT sort of info:
+`/seeds`: A place to store csvs for some reason
+`/analyses`: A place to create .SQL files programmatically
+`/macros`: The dumb jinja crap 
+`/models`: Data modeling that almost always requires a physical change to a DB
+`/tests`: Testing of SQL
+`/snapshots`: Recording changes to mutable tables over time. 

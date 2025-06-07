@@ -28,4 +28,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 ##NOTE: JAL isnt sure how helpfulthis is (Dbt) unless we can make views orsomething
 models:
   dbt_testing:
-    +materialized: ephemeral
+    demo:
+      +materialized: view
+    analysis_chain:
+      +materialized: view

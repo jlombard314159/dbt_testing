@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: group_summaries
+    columns:
+      - name: max_value
+        tests:
+          - not_null
+      - name: measurement
+        tests:
+          - accepted_values:
+              values: ['height','armspan','teeth_num','jump_height']
+      - name: year_id
+        tests:
+          - accepted_values: 
+              values: [1, 2]
+
+# Add test to check the join somehow.

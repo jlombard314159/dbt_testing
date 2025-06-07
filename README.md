@@ -39,3 +39,5 @@ DBT sort of info:
 `/models`: Data modeling that almost always requires a physical change to a DB
 `/tests`: Testing of SQL
 `/snapshots`: Recording changes to mutable tables over time. 
+
+`schema.yml` are not necessary

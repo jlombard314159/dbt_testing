@@ -6,3 +6,5 @@ in order of what i think is useful
 - Play around with some snapshots (maybe)
 - Look at how airflow or dagster would be used with DBT
 - Look at macros
+
+- Read: https://discord.com/blog/overclocking-dbt-discords-custom-solution-in-processing-petabytes-of-data

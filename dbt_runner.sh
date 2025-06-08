@@ -9,6 +9,7 @@ dbt test
 # Some additional things
 
 #Generate SQL but no execution
+# NOTE: This is used to create anything in analyses
 dbt compile
 
 #Create documentation

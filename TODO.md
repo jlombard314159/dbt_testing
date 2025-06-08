@@ -1,11 +1,13 @@
 ## TODO
 
 in order of what i think is useful
-- Look at cal-itp uses scripts: https://github.com/cal-itp/data-infra/tree/main/warehouse/scripts
+- `/analyses` sql scripts are not actually useable. They have a weird wrapper from DBT
+- Can you run 
 - Play around with some snapshots (maybe)
 
-# These seem dumb
+# Macros seem dumb
 - Look at macros
+- Jinja looks lame
 
 # Dagster is complicated
 I have no clue why you would use dagster. Also issues with using dagster for w/e reason. Issue with the pendulum package

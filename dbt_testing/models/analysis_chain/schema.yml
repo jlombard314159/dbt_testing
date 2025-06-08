@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: group_summaries
+  - name: max_summary
     columns:
       - name: max_value
         tests:
@@ -14,5 +14,11 @@ models:
         tests:
           - accepted_values: 
               values: [1, 2]
+  - name: group_summaries
+    columns:
+      - name: avg_val
+        tests:
+          - not_null
+
 
 # Add test to check the join somehow.

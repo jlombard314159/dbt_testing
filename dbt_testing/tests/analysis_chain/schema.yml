@@ -1,0 +1,12 @@
+version: 2
+data_tests:
+  - name: check_avg
+    description: >
+      If averages don't conform to our expected range -> issue
+  - name: check_counts
+    description: >
+      If the counts are too high or low -> issue
+  - name: check_max
+    description: >
+      If the maximum value for groups are too high or close to the avg -> issue
+

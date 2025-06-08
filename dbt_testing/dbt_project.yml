@@ -21,14 +21,17 @@ clean-targets:         # directories to be removed by `dbt clean`
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
-# In this example config, we tell dbt to build all models in the example/
-# directory as views. These settings can be overridden in the individual model
-# files using the `{{ config(...) }}` macro.
-
 ##NOTE: JAL isnt sure how helpfulthis is (Dbt) unless we can make views orsomething
 models:
   dbt_testing:
     demo:
-      +materialized: view
+      +materialized: ephemeral
     analysis_chain:
-      +materialized: view
+      joined_data:
+        +materialized: ephemeral
+      max_summary:
+        +materialized: view
+      group_summaries:
+        +materialized: view
+
+    

@@ -1,3 +1,4 @@
+#Connection for a particular DB
 dbt_testing: #Needs to be name of dbt proj
     target: dev
     outputs:

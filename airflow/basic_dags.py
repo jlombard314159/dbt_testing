@@ -26,6 +26,22 @@ with DAG(
     tags=["dbt"]
 ) as dag:
 
-    t1 = BashOperator(
-        
+    geo_task = BashOperator(
+        task_id='geo_creation',
+        bash_command='dbt build ',
+        dag=dag
     )
+
+    analysis_task = BashOperator(
+        task_id='analysis',
+        bash_command='dbt build',
+        dag=dag
+    )
+    
+    test_dbt = BashOperator(
+        task_id='testing',
+        bash_command='dbt test',
+        dag=dag
+    )
+
+    geo_task >> analysis_task >> test_dbt

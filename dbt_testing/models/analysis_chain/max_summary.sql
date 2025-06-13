@@ -17,7 +17,7 @@ with max_measurement as (
 -- )
 
 max_resp_info as (
-    select survey_type, contact_info, 
+    select sp.respondent_id, survey_type, contact_info, 
         measurement, sp.year_id, max_value
     from max_measurement
     left join (

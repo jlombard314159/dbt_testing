@@ -10,6 +10,8 @@ in order of what i think is useful
 # airflow
 - Figure out how to identify if airflow is working?
 
+# soda
+- No sqlite support which makes sense so try @ census instead.
 
 ## Census related
 - Identify what is doable for AIES and others.

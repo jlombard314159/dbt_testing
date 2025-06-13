@@ -1,6 +1,5 @@
-{% macro geo_dist(column_name) %}
+{% macro geo_dist(coord_one, coord_two) %}
 
-
---- Do something with calculting a (x1, y1) (x2, y2) coord
+({{coord_one}} - {{coord_two}}) * ({{coord_one}} - {{coord_two}})
 
 {% endmacro %}

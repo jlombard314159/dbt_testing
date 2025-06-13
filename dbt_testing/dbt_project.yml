@@ -33,5 +33,10 @@ models:
         +materialized: view
       group_summaries:
         +materialized: view
+    geo:
+      joined_geo:
+        +materialized: ephemeral
+      find_neighbor:
+        +materialized: view
 
     

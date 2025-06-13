@@ -15,7 +15,7 @@ COPY . .
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --progress-bar off -r requirements.txt
 
-RUN apt-get install -y sqlite3 libsqlite3-dev
+# RUN apt-get install -y sqlite3 libsqlite3-dev
 RUN mkdir /db
 
 RUN apt-get install -y r-base

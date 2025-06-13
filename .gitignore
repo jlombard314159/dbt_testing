@@ -198,3 +198,5 @@ cython_debug/
 target/
 dbt_packages/
 logs/
+
+*.db

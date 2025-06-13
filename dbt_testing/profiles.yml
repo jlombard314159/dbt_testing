@@ -8,5 +8,5 @@ dbt_testing: #Needs to be name of dbt proj
             database: 'database'
             schema: 'main'
             schemas_and_paths:
-              main: 'C:/Users/jlomb/Documents/PersonalProjects/SurveyData.db'
-            schema_directory: 'C:/Users/jlomb/Documents/PersonalProjects'
+              main: '/db/SurveyData.db'
+            schema_directory: '/db'

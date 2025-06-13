@@ -1,3 +1,4 @@
 polars
 dbt-core
 apache-airflow
+dbt-sqlite

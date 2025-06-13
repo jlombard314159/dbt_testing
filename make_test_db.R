@@ -61,7 +61,7 @@ geography$y_coord <- rnorm(nrow(geography), -85, 4)
 geography$spatial_proj <- 'wgs84'
 
 con <- DBI::dbConnect(RSQLite::SQLite(),
-                      dbname = 'C:/Users/jlomb/Documents/PersonalProjects/SurveyData.db')
+                      dbname = '/db/SurveyData.db')
 
 dplyr::copy_to(con, parent_data, overwrite = TRUE, temporary = FALSE,
                name = 'ParentData')

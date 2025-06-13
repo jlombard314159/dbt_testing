@@ -1,20 +1,25 @@
-FROM apache/airflow:2.6.3-python3.11
+# as far as I am aware this installs airflow and python
+FROM python:3.11
+
+
+USER root
+
+RUN apt-get update
+RUN apt-get upgrade -y
 
 WORKDIR /app
 
-COPY . /app
+COPY . .
 
-RUN apt-get updates && \ 
-    apt-get install -y \
-    sqlite3 && \
-    mkdir /db
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --progress-bar off -r requirements.txt
 
+RUN apt-get install -y sqlite3 libsqlite3-dev
+RUN mkdir /db
 
-FROM rocker/tidverse
+RUN apt-get install -y r-base
 
-RUN Rscript -e "install.packages(c('RSQLite','DBI','dplyr'))"
+RUN Rscript -e "install.packages(c('RSQLite','DBI','dplyr','dbplyr'))"
 
-cmd ["python"]
+CMD ["python3"]

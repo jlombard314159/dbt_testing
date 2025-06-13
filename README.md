@@ -1,6 +1,12 @@
 # dbt_testing
-meow
+Use Docker
 
+## docker stuff
+
+annoying setup
+- Run `code` in ubuntu terminal
+- actually launch docker
+- run the docker compose in admin mode
 # dbt steps
 Part of this came directly from:
 https://docs.getdbt.com/guides/manual-install?step=1

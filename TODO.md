@@ -6,14 +6,10 @@ in order of what i think is useful
 - Play around with some snapshots (maybe)
 
 # Macros seem dumb
-- Look at macros
-- Jinja looks lame
+- Implement a transformation macro
 
-# Dagster is complicated
-I have no clue why you would use dagster. Also issues with using dagster for w/e reason. Issue with the pendulum package
-- Look at how airflow or dagster would be used with DBT
-
-- Read: https://discord.com/blog/overclocking-dbt-discords-custom-solution-in-processing-petabytes-of-data
+# Try airflow
+- 
 
 ## Census related
 - Identify what is doable for AIES and others.

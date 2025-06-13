@@ -1,0 +1,12 @@
+services:
+  test_env:
+    build:
+      context: .
+    ports:
+      - "4040:4040"
+      - "8888:8888"
+    volumes:
+      - ./:/app
+    stdin_open: true
+    tty: true
+    network_mode: host

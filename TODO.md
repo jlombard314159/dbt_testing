@@ -2,16 +2,17 @@
 
 in order of what i think is useful
 - `/analyses` sql scripts are not actually useable. They have a weird wrapper from DBT
-- Can you run 
 - Play around with some snapshots (maybe)
 
-# Macros seem dumb
 - Implement a transformation macro
+- finish the geo example
 
-# Try airflow
-- 
+# airflow
+- Figure out how to identify if airflow is working?
+
 
 ## Census related
 - Identify what is doable for AIES and others.
 
+- figure out airflow at census
 - Multiple database types. Can imagine postgres, redshift, etc. as potential ones.

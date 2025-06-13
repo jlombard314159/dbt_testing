@@ -2,3 +2,6 @@ polars
 dbt-core
 apache-airflow
 dbt-sqlite
+# Two below are for airflow UI
+flask
+flask-appbuilder

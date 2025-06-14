@@ -4,9 +4,6 @@ in order of what i think is useful
 - `/analyses` sql scripts are not actually useable. They have a weird wrapper from DBT
 - Play around with some snapshots (maybe)
 
-- Implement a transformation macro
-- finish the geo example
-
 # airflow
 - Figure out how to identify if airflow is working?
 

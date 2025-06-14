@@ -32,6 +32,9 @@ https://docs.getdbt.com/guides/manual-install?step=1
 
 - run `dbt test` to identify if tests succeed
 
+Random notes:
+You can't test an ephemeral table.
+
 ## Does this work at census
 
 Steps that JAL thinks he can do in docker: all the dbt stuff

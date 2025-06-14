@@ -1,5 +1,0 @@
-version: 2
-data_tests:
-  - name: check_geo_properties
-    description: >
-      If x is negative or y is positive we have an issue.

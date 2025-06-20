@@ -5,3 +5,8 @@ dbt-sqlite
 # Two below are for airflow UI
 flask
 flask-appbuilder
+pre_commit
+
+#if we wanted jupyter stuff
+# jupyter
+# jupyterlab

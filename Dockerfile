@@ -23,3 +23,10 @@ RUN apt-get install -y r-base
 RUN Rscript -e "install.packages(c('RSQLite','DBI','dplyr','dbplyr'))"
 
 CMD ["python3"]
+
+# if we want to install a custom thing
+# # install edl utils
+# RUN pip install ./wheels/edl_utils-0.0.1-py2.py3-none-any.whl
+
+# ##NOTE: Enter token by looking at the log
+# CMD ["jupyter", "lab", "--ip", "0.0.0.0", "--port", "8888", "--allow-root"]

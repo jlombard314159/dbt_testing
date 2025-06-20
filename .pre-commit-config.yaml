@@ -1,16 +1,40 @@
 repos:
-- repo: https://github.com/astral-sh/ruff-pre-commit
-  # Ruff version.
-  rev: v0.11.12
-  hooks:
-    # Run the linter.
-    - id: ruff-check
-      types_or: [ python, pyi ]
-      args: [ --fix ]
-    # Run the formatter.
-    - id: ruff-format
-      types_or: [ python, pyi ]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-case-conflict
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-xml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: check-symlinks
+      - id: mixed-line-ending
+      - id: sort-simple-yaml
+      - id: fix-encoding-pragma
+        args:
+          - --remove
+      - id: pretty-format-json
+        args:
+          - --autofix
 
-    - id: check-yaml
-    - id: end-of-file-fixer
-    - id: trailing-whitespace
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.9
+    hooks:
+      - id: ruff
+        types_or: [python,pyi]
+        args:
+          - --fix
+          - --target-version=py311
+          - --select=B,C,E,F,W,B9
+          - --line-length=80
+          - --ignore=E203,E402,E501,E261
+      - id: ruff-format
+        types_or: [ python,pyi]
+        args:
+          - --target-version=py311
+          - --line-length=80
